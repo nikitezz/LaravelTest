@@ -21,7 +21,7 @@ class UserController extends Controller
             'avatar'=>'required',
 
         ]);
-        
+
         $avatars = $request->file('avatar')->store("images");
 
         $users = User::create([
